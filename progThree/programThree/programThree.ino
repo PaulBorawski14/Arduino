@@ -23,12 +23,12 @@ void setup() {
   pinMode(switchPin,INPUT);
   
   // Print a message to the LCD.
-    lcd.print("Welcome to message center:");
+    lcd.print("Happy Easter:");
   // set the cursor to column 0, line 1
   // line 1 is the second row, since counting begins with 0
   lcd.setCursor(0, 1);
   // print to the second line
-  lcd.print("Shake to change LCD");
+  lcd.print("Press the button");
 }
 
 void loop() {
@@ -48,22 +48,22 @@ void loop() {
       // set the cursor to column 0, line 0     
       lcd.setCursor(0, 0);
       // print some text
-      lcd.print("Paul Borawski says:");
+      lcd.print("Paul Borawski:");
       // move the cursor to the second line
       lcd.setCursor(0, 1);
 
       // choose a saying to print baed on the value in reply 
       switch(reply){
       case 0:
-        lcd.print("Have a great day");
+        lcd.print("Happy Easter");
         break;
 
       case 1:
-        lcd.print("Pizza is tasty");
+        lcd.print("PaulBorawski.com");
         break;
 
       case 2:
-        lcd.print("Happy St. Patrick's Day");
+        lcd.print("Happy Easter");
         break;
 
       case 3:
@@ -71,19 +71,19 @@ void loop() {
         break;
 
       case 4:
-        lcd.print("Baby girl you so damn fine doe");
+        lcd.print("Happy Easter");
         break;
 
       case 5:
-        lcd.print("I like turtles");
+        lcd.print("PaulBorawski.com");
         break;
 
       case 6:
-        lcd.print("Audi is my favorite car");
+        lcd.print("Happy Easter");
         break;
 
       case 7:
-        lcd.print("ANything else");
+        lcd.print("Happy Easter");
         break;
       }
     }
